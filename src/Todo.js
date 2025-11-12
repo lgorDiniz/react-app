@@ -23,9 +23,7 @@ function Todo(){
     }, [])
 
     useEffect(() => {
-        if(items.length > 0){
             localStorage.setItem(SAVED_ITEMS, JSON.stringify(items));
-        }
     }, [items])
 
     function onAddItem(text){
